@@ -19,7 +19,7 @@ body {
   box-shadow: 0 0 0.62rem rgba(0, 0, 0, 0.2);
 }
 
-.nav-left .logo {
+.logo {
   font-size: 1.12rem;
   color: #6070ff;
   margin-left: 1.5rem;
@@ -33,6 +33,8 @@ body {
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   background-image: url(src/img/header-shapes\ mobile.png);
@@ -40,7 +42,7 @@ body {
   background-size: 100%;
 }
 
-.greeting-text h2 {
+.greeting-text h1 {
   font-size: 2.5rem;
   width: 80%;
   height: 20%;
@@ -60,6 +62,8 @@ body {
 }
 
 .main-container .greeting-text {
+  display: flex;
+  flex-direction: column;
   padding-top: 30%;
   padding-left: 7%;
   padding-right: 7%;
@@ -74,9 +78,13 @@ body {
 }
 
 .main-container .media-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
   height: 1.25rem;
   padding-left: 7%;
   padding-top: 2%;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -104,12 +112,13 @@ body {
   }
 
   .main-container .media-icon {
+    width: 40%;
     height: 1.25rem;
     padding-left: 15%;
     padding-top: 2%;
   }
 
-  .greeting-text h2 {
+  .greeting-text h1 {
     font-size: 3rem;
   }
 
