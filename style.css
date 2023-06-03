@@ -171,6 +171,7 @@ body {
   padding-top: 3%;
   padding-left: 6%;
   padding-bottom: 3%;
+  list-style: none;
 }
 
 .btn {
@@ -273,6 +274,7 @@ body {
   padding-top: 5%;
   padding-right: 6%;
   padding-left: 6%;
+  list-style: none;
 }
 
 .languages-des {
