@@ -61,7 +61,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-*Web browser like  <a href='https://www.google.com/chrome/'>Google Chrome</a>
+<li>Web browser like  <a href='https://www.google.com/chrome/'>Google Chrome</a></li>
 
 <li><a href='https://git-scm.com/'>Git</a></li>
 
