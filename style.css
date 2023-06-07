@@ -366,7 +366,7 @@ body {
   border-top-left-radius: 4rem;
   padding-left: 9%;
   padding-right: 9%;
-  color: #ffffff;
+  color: #fff;
   align-items: center;
   text-align: center;
 }
@@ -398,7 +398,7 @@ form ul {
   margin: 0;
 }
 
-.input-box input{
+.input-box input {
   width: 100%;
   height: 2.5rem;
   border: 1px solid #cfd8dc;
@@ -408,7 +408,7 @@ form ul {
   padding: 3%;
 }
 
-.input-box textarea{
+.input-box textarea {
   width: 100%;
   height: 8.5rem;
   border: 1px solid #cfd8dc;
@@ -419,7 +419,7 @@ form ul {
 }
 
 button {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 3.2%;
   font-weight: 700;
   font-size: 17px;
@@ -430,10 +430,9 @@ button {
   margin-bottom: 25%;
   margin-right: 11rem;
   cursor: pointer;
-  
 }
 
-.button button{
+.button button {
   align-items: left;
   justify-content: left;
 }
