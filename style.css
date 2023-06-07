@@ -356,6 +356,14 @@ body {
   color: #253858;
 }
 
+.contact-section {
+  background-color: #6070ff;
+  background-image: url(src/img/contact\ form\ shapes-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-top-right-radius: 3rem;
+}
+
 @media (min-width: 768px) {
   .flex-div {
     height: 30%;
