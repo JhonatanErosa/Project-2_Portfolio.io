@@ -9,15 +9,20 @@
 </head>
 <body>
     <div class="mobile-main">
-        <header class="flex-div">
+        <header class="flex-div grid">
             <a><h3 class="logo">My Logo</h3></a>
+            <ul class="button-tags">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about"></a>About</li>
+                <li><a href="#contact"></a>Contact</li>
+            </ul>
             <nav>
                 <div class="nav-right">
                     <img src="src/img/Union.png" alt="des-menu" class="menu">
                 </div>
             </nav>
         </header>
-        <section class="main-container">
+        <section class="main-container grid">
             <div class="greeting-text">
                 <h1 class="name">I'm Jhonatan.<br>Glad to see you!</h1>
                 <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -25,7 +30,7 @@
             <div class="connect">
                 <p>LET'S CONNECT</p>
             </div>
-            <ul class="media-icon">
+            <ul class="media-icon grid">
                 <li><a href="" class="icon1"><img src="src/img/icons/Vector.png" alt="Twitter"></a></li>
                 <li><a href="" class="icon2"><img src="src/img/icons/Linkedin icon.png" alt="Linkedin"></a></li>
                 <li><a href="" class="icon3"><img src="src/img/icons/Vector (1).png" alt="icon3"></a></li>
@@ -34,7 +39,7 @@
             </ul>
         </section>
     </div>
-    <section class="works-container">
+    <section class="works-container grid">
         <div class="card-container">
             <header class="thumbnail">
                 <img src="src/img/Snapshoot.png" alt="tonic1">
@@ -132,16 +137,16 @@
             </div>
         </div>
     </section>
-    <section class="about-section">
+    <section class="about-section grid">
         <section class="cont-about">
             <div class="about-myself">
                 <h2 class="about-title">About Myself</h2>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
             </div>
             <div class="connect">
-                <h2>LET'S CONNECT</h2>
+                <p>LET'S CONNECT</p>
             </div>
-            <ul class="media-icon2">
+            <ul class="media-icon2 grid">
                 <li><a href="" class="icon4"><img src="src/img/icons/Vector (2).png" alt="icon4"></a></li>
                 <li><a href="" class="icon2"><img src="src/img/icons/Linkedin icon.png" alt="Linkedin"></a></li>
                 <li><a href="" class="icon5"><img src="src/img/icons/Vector (3).png" alt="icon5"></a></li> 
@@ -152,13 +157,13 @@
                 <a href="" class="btn3">Get my resume</a>
             </div>
         </section>
-        <ul class="bottom-menus">
+        <ul class="bottom-menus grid">
             <li class="languages-menu">
                 <div class="languages-des">
                     <h3>Languages</h3>
                     <img src="src/img/icons/chevron-down-regular-24.png" alt="des 1">
                 </div>
-                <ul class="languages-box">
+                <ul class="languages-box grid">
                     <li class="javascript-box">
                         <img src="src/img/icons/Ellipse 1.png" alt="JS-Icon">
                         <p>JavaScript</p>
@@ -183,16 +188,18 @@
             </li>
         </ul>
     </section>
-    <section class="contact-section">
-        <div class="contact-title">
-            <h2>Contact me</h2>
-        </div>
-        <div class="contact-text">
-            <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
-                I’d love to help with it!</p>
+    <section class="contact-section grid">
+        <div class="contact-text-section">
+            <div class="contact-title">
+                <h4>Contact me</h4>
+            </div>
+            <div class="contact-text">
+                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
+                    I’d love to help with it!</p>
+            </div>
         </div>
         <form action="https://formspree.io/f/mdovrwgl" method="post">
-            <ul>
+            <ul class="grid">
                 <li class="input-box">
                     <label for="name"></label>
                     <input type="text" name="user_name" id="name" placeholder="Name" required maxlength="30"/>
