@@ -179,6 +179,13 @@ h4{
   border-radius: 0.5rem;
   text-decoration: none;
   padding: 0.5em;
+  background-color: #fff;
+  transition: padding 1s, background-color 1s;
+}
+
+.btn2:hover {
+  padding: 1em;
+  background-color: #aaa;
 }
 
 .about-section {
