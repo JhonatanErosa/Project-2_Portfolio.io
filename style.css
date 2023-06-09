@@ -58,6 +58,23 @@ h4{
   margin: 0.8em 1.5em;
 }
 
+.logo {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .nav-right img {
   grid-column: 6/9;
   margin: 1.1em 2.25em;
