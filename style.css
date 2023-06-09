@@ -87,7 +87,7 @@ h4{
   grid-column: 1/9;
   flex-direction: column;
   width: 100%;
-  background-image: url(src/img/header-shapes\ mobile.png);
+  background-image: url(src/img/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   border: 1px solid #dfe1e6;
@@ -123,7 +123,7 @@ h4{
 
 .works-container {
   margin: 5em 2em ;
-  row-gap: 10em;
+  row-gap: 5em;
   display: flex;
   flex-direction: column;
   grid-column: 2/8;
@@ -201,8 +201,8 @@ h4{
 }
 
 .btn2:hover {
-  padding: 1em;
-  background-color: #aaa;
+  padding: 0.7em;
+  background-color: #ebebff;
 }
 
 .about-section {
@@ -212,6 +212,7 @@ h4{
   flex-direction: column;
   border: 1px solid #dfe1e6;
   border-top-right-radius: 4em;
+  border-bottom: 0;
 }
 
 .about-title {
@@ -337,13 +338,17 @@ h4{
   align-items: center;
 }
 
+.background-section {
+  background: #fff;
+}
+
 .contact-section {
   background: #6070FF;
-  background-image: url(src/img/contact\ form\ shapes-mobile@2x.png);
+  background-image: url(src/img/contact\ form\ shapes-mobile@2x.svg);
   background-repeat: no-repeat;
   background-size: 55%;
   background-position-x: right;
-  background-position-y: -25%;
+  background-position-y: 2.5em;
   border-top-left-radius: 4rem;
 }
 
@@ -351,12 +356,62 @@ h4{
   display: flex;
   grid-column: 1/9;
   flex-direction: column;
-  border: 1px solid #dfe1e6;
-  border-top-right-radius: 4em;
+  align-items: center;
 }
 
 .contact-title h4{
-  margin: 2.5em 0.6em 0 0.6em;
+  margin: 3em 0.6em 0 0.6em;
   font-size: 2.5em;
   color: #fff;
+}
+
+.contact-text p{
+  color: #EBEBFF;
+  margin: 0.6em 0.6em 0 0.6em;
+  width: 20rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+form {
+  display: flex;
+  grid-column: 1/9;
+  flex-direction: column;
+  align-items: center;
+}
+
+form ul {
+  list-style: none;
+}
+
+.input-box input {
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  border-radius: 0.5rem;
+  margin: 0.6em 0.6em 0 0.6em;
+  text-align: left;
+  padding: 3%;
+}
+
+.input-box textarea {
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  border-radius: 0.5rem;
+  margin: 0.6em 0.6em 0 0.6em;
+  text-align: left;
+  padding: 3%;
+}
+
+button {
+  background-color: #fff;
+  padding: 3%;
+  font-weight: 700;
+  font-size: 1.06em;
+  color: #6070ff;
+  border: 1px solid #cfd8dc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 1em 0.6em 2.5em 0.6em;
 }
