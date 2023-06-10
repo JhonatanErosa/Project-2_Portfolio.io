@@ -93,6 +93,7 @@ form ul {
 .greeting-text h1 {
   font-size: 2.5em;
   margin: 3.3em 0.6em 0 1em;
+  color: #091e42;
 }
 
 .greeting-text p {
@@ -233,6 +234,7 @@ form ul {
 .about-title {
   margin: 2.5em 0.6em 0 0.6em;
   font-size: 2.5em;
+  color: #091e42;
 }
 
 .about-myself p {
@@ -459,6 +461,8 @@ button {
     margin-right: 1em;
     cursor: pointer;
     color: #344563;
+    font-weight: 550;
+    font-size: 0.7em;
   }
 
   .main-container {
@@ -482,7 +486,7 @@ button {
 
   .media-icon {
     margin: 0.8em 20% 20% 15%;
-    width: 25%;
+    width: 23%;
   }
 
   #container-card {
@@ -508,6 +512,7 @@ button {
   .info-card {
     margin: 0 20% 0 5%;
     font-size: 0.5em;
+    width: 80%;
   }
 
   .card1 p {
@@ -517,6 +522,7 @@ button {
 
   .languages {
     margin: 7% 30% 0 5%;
+    width: 60%;
   }
 
   .project-link {
@@ -549,6 +555,7 @@ button {
   .about-section {
     display: flex;
     justify-content: space-between;
+    font-size: 2.5em;
   }
 
   .about-myself {
@@ -557,7 +564,7 @@ button {
 
   .about-title {
     margin: 22% 0.6em 0 10%;
-    font-size: 1.5em;
+    font-size: 0.8em;
   }
 
   .bottom-menus {
@@ -594,11 +601,7 @@ button {
 
   .languages-box {
     display: flex;
-
-    /* justify-content: space-between; */
     flex-direction: row;
-
-    /* width: 85%; */
     margin: 0 5em 0 0;
   }
 
@@ -672,5 +675,30 @@ button {
     grid-column: 4/6;
     font-size: 1em;
     margin: 5% 8% 5% 38%;
+  }
+}
+
+@media (min-width: 992px) {
+  .media-icon {
+    margin: 0.8em 20% 20% 15%;
+    width: 14%;
+  }
+
+  .info-card {
+    margin: 0 10% 0 5%;
+    font-size: 0.5em;
+    width: 50%;
+  }
+
+  .languages {
+    width: 34%;
+  }
+
+  .media-icon2 {
+    width: 15%;
+  }
+
+  .flex-div ul {
+    margin-left: 75%;
   }
 }
