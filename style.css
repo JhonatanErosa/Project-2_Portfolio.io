@@ -1,45 +1,41 @@
-body{
-  background: #E5E5E5;
+body {
+  background: #e5e5e5;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
 
-body,p,a,ul,li{
+body,
+p,
+a,
+ul,
+li {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-size: 16px;
 }
 
-p,a,li{
+p,
+a,
+li {
   color: #344563;
   line-height: 1.4em;
-
-}
-h1 {
-  font-size: 2.5em;
-  color: #172B4D
-}
-h2{
-  font-size: 1.6em;
 }
 
-h3 {
-
-}
-
-h4{
-  font-size: 1.1em;
-}
-
-/*mobile style*/
+/* mobile style */
 
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
 }
 
-.flex-div ul{
+form ul {
+  list-style: none;
+}
+
+.flex-div ul {
   display: none;
+  list-style: none;
 }
 
 .flex-div {
@@ -49,16 +45,15 @@ h4{
   height: 3em;
   box-shadow: 0 0 0.62rem rgba(0, 0, 0, 0.2);
   background: #fff;
+  align-items: center;
 }
 
 .logo {
   font-size: 1.12em;
   color: #6070ff;
-  grid-column: 1/4;
-  margin: 0.8em 1.5em;
-}
-
-.logo {
+  margin: 0.8em 2em;
+  grid-column: 1/5;
+  width: 100%;
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -77,7 +72,7 @@ h4{
 
 .nav-right img {
   grid-column: 6/9;
-  margin: 1.1em 2.25em;
+  margin: 1.1em 2.25em 1.1em 0;
   cursor: pointer;
 }
 
@@ -90,25 +85,27 @@ h4{
   background-image: url(src/img/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position-y: 0.8em;
   border: 1px solid #dfe1e6;
   border-bottom-left-radius: 4em;
 }
 
 .greeting-text h1 {
-  margin: 2.5em 0.6em 0 0.6em;
+  font-size: 2.5em;
+  margin: 3.3em 0.6em 0 1em;
 }
 
 .greeting-text p {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 25rem;
-  margin: 0.6em 2.5em 0 1.5em;
+  margin: 0.8em 2.5em;
 }
 
 .connect p {
   font-size: 1rem;
   line-height: 1.5rem;
-  margin: 0.6em 2.5em 0 1.5em;
+  margin: 0.8em 2.5em;
   color: #7f8cff;
 }
 
@@ -116,31 +113,40 @@ h4{
   display: flex;
   justify-content: space-between;
   height: 1.25rem;
-  margin: 0.6em 9em 8em 1.5em;
+  margin: 0.8em 2.5em 6em 2.5em;
   cursor: pointer;
   list-style: none;
+  width: 45%;
 }
 
 .works-container {
-  margin: 5em 2em ;
+  margin: 5em 2em;
   row-gap: 5em;
   display: flex;
   flex-direction: column;
   grid-column: 2/8;
 }
 
-.card-container {
+#container-card {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 4%;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/9;
 }
 
-.card-container img {
-  width: 90%;
+.thumbnail img {
+  width: 92%;
   margin: 0.8em;
 }
 
-.card-container .card h2 {
+.card1 h2 {
+  margin: 0 0.8em 0 0.4em;
+  font-size: 2em;
+}
+
+.card2 h2 {
   margin: 0.2em 0.8em 0 0.4em;
   font-size: 2em;
 }
@@ -148,13 +154,14 @@ h4{
 .info-card {
   display: flex;
   justify-content: space-between;
-  font-size: 0.7em;
+  font-size: 0.5em;
   margin: 0 5em 0 1.5em;
+  align-items: center;
 }
 
 .info-card .canopy {
   list-style: none;
-  padding-top: 0.35em;
+  font-size: 1.5em;
 }
 
 .info-card .c-text {
@@ -164,14 +171,22 @@ h4{
 .card-text {
   display: flex;
   justify-content: center;
-  margin: 0 1.5em 0 1em;
+  margin: auto 1.5em 0 1em;
 }
 
 .languages {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin: 1em 3.5em 0 0.8em;
+  margin: 2% 30% 0 5%;
+}
+
+.languages a {
+  margin: 0 0.5% 0 1%;
+}
+
+.languages-menu {
+  list-style: none;
 }
 
 .btn {
@@ -227,13 +242,21 @@ h4{
   margin: 0.6em 2.5em 0 1.5em;
 }
 
+.connect2 p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0.8em 1.5em;
+  color: #7f8cff;
+}
+
 .media-icon2 {
   display: flex;
   justify-content: space-between;
   height: 1.25rem;
-  margin: 0.6em 8em 0em 1.5em;
+  margin: 0.6em 8em 0 1.5em;
   cursor: pointer;
   list-style: none;
+  width: 50%;
 }
 
 .resume-link {
@@ -263,7 +286,7 @@ h4{
   align-items: center;
 }
 
-.languages-des img{
+.languages-des img {
   height: 5%;
 }
 
@@ -282,6 +305,16 @@ h4{
   background: #f7f7f9;
   margin: 0.6em 2.5em 0 1.5em;
   padding: 0.5em;
+}
+
+.contact-text p {
+  color: #ebebff;
+  margin: 0.6em 0.6em 0 0.6em;
+  width: 20rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.75rem;
 }
 
 .languages-box .javascript-box p {
@@ -343,7 +376,7 @@ h4{
 }
 
 .contact-section {
-  background: #6070FF;
+  background: #6070ff;
   background-image: url(src/img/contact\ form\ shapes-mobile@2x.svg);
   background-repeat: no-repeat;
   background-size: 55%;
@@ -359,38 +392,25 @@ h4{
   align-items: center;
 }
 
-.contact-title h4{
+.contact-title h4 {
   margin: 3em 0.6em 0 0.6em;
   font-size: 2.5em;
   color: #fff;
-}
-
-.contact-text p{
-  color: #EBEBFF;
-  margin: 0.6em 0.6em 0 0.6em;
-  width: 20rem;
-  font-size: 1.25rem;
-  justify-content: center;
-  text-align: center;
-  line-height: 1.75rem;
 }
 
 form {
   display: flex;
   grid-column: 1/9;
   flex-direction: column;
-  align-items: center;
-}
-
-form ul {
-  list-style: none;
+  align-items: left;
+  margin: 0.6em 3em 0 0.6em;
 }
 
 .input-box input {
   width: 100%;
   border: 1px solid #cfd8dc;
   border-radius: 0.5rem;
-  margin: 0.6em 0.6em 0 0.6em;
+  margin: 0.6em 1em 0 0.6em;
   text-align: left;
   padding: 3%;
 }
@@ -414,4 +434,243 @@ button {
   border-radius: 0.5rem;
   cursor: pointer;
   margin: 1em 0.6em 2.5em 0.6em;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  .logo {
+    margin: 0 2% 0 70%;
+  }
+
+  .nav-right img {
+    display: none;
+  }
+
+  .flex-div ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 0.8em 60%;
+  }
+
+  .flex-div li {
+    margin-right: 1em;
+    cursor: pointer;
+    color: #344563;
+  }
+
+  .main-container {
+    background-image: url(src/img/Header\ bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 2em;
+  }
+
+  .greeting-text h1 {
+    margin: 20% 0.6em 0 15%;
+  }
+
+  .greeting-text p {
+    margin: 0.8em 20% 0 15%;
+  }
+
+  .connect p {
+    margin: 0.8em 20% 0 15%;
+  }
+
+  .media-icon {
+    margin: 0.8em 20% 20% 15%;
+    width: 25%;
+  }
+
+  #container-card {
+    align-content: center;
+  }
+
+  .thumbnail .item-1 {
+    position: absolute;
+    left: 5%;
+    width: 42%;
+  }
+
+  .card1 {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .card1 h2 {
+    margin: 10% 0 0 4%;
+    font-size: 1.5em;
+  }
+
+  .info-card {
+    margin: 0 20% 0 5%;
+    font-size: 0.5em;
+  }
+
+  .card1 p {
+    font-size: 0.7em;
+    margin: 0 10% 0 0;
+  }
+
+  .languages {
+    margin: 7% 30% 0 5%;
+  }
+
+  .project-link {
+    margin: 7% 0 27% 5%;
+    font-size: 0.8em;
+  }
+
+  .thumbnail .item-2 {
+    position: absolute;
+    right: 2em;
+    width: 42%;
+  }
+
+  .card2 {
+    width: 50%;
+    margin-right: 50%;
+    margin-left: 2%;
+  }
+
+  .card2 p {
+    font-size: 0.7em;
+    margin: 0 10% 0 1%;
+  }
+
+  .card2 h2 {
+    margin: 10% 0 0 4%;
+    font-size: 1.5em;
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-myself {
+    margin-right: 50%;
+  }
+
+  .about-title {
+    margin: 22% 0.6em 0 10%;
+    font-size: 1.5em;
+  }
+
+  .bottom-menus {
+    position: absolute;
+    right: 2em;
+    width: 50%;
+  }
+
+  .about-myself p {
+    font-size: 1rem;
+    margin: 3% 15% 0 10%;
+  }
+
+  .connect2 p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 2% 5%;
+    color: #7f8cff;
+  }
+
+  .media-icon2 {
+    margin: 2% 0 0 5%;
+    width: 20%;
+  }
+
+  .resume-link {
+    margin: 5% 5% 15%;
+  }
+
+  .languages-des {
+    margin: 20% 2.5em 0 1.5em;
+    width: 90%;
+  }
+
+  .languages-box {
+    display: flex;
+
+    /* justify-content: space-between; */
+    flex-direction: row;
+
+    /* width: 85%; */
+    margin: 0 5em 0 0;
+  }
+
+  .languages-box .javascript-box {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0.5em;
+    padding: 1% 10% 10% 1%;
+  }
+
+  .languages-box .javascript-box p {
+    font-size: 0.9em;
+    padding-left: 0;
+    margin-top: 10%;
+  }
+
+  .languages-box .html-box {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0.5em;
+    padding: 1% 10% 10% 1%;
+  }
+
+  .languages-box .html-box p {
+    font-size: 0.8em;
+    padding-left: 0;
+    margin-top: 20%;
+  }
+
+  .languages-box .css-box {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0.5em;
+    padding: 1% 10% 10% 1%;
+  }
+
+  .languages-box .css-box p {
+    font-size: 0.8em;
+    padding-left: 0;
+    margin-top: 20%;
+  }
+
+  .frameworks-menu {
+    margin: 0.6em 2.5em 0 1.5em;
+    width: 90%;
+  }
+
+  .skills-menu {
+    margin: 0.6em 2.5em 0 1.5em;
+    width: 90%;
+  }
+
+  .contact-section {
+    background-image: url(src/img/contact\ form\ background\ shapes.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+  }
+
+  .contact-title h4 {
+    margin: 3em 0.6em 0 0.6em;
+    font-size: 1.5em;
+    color: #fff;
+  }
+
+  form {
+    grid-column: 3/7;
+  }
+
+  button {
+    grid-column: 4/6;
+    font-size: 1em;
+    margin: 5% 8% 5% 38%;
+  }
 }
