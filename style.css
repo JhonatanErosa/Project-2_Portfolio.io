@@ -1,44 +1,47 @@
-body{
-  background: #E5E5E5;
+body {
+  background: #e5e5e5;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
 
-body,p,a,ul,li{
+body,
+p,
+a,
+ul,
+li {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-p,a,li{
+p,
+a,
+li {
   color: #344563;
   line-height: 1.4em;
-
 }
+
 h1 {
   font-size: 2.5em;
-  color: #172B4D
+  color: #172b4d;
 }
-h2{
+
+h2 {
   font-size: 1.6em;
 }
 
-h3 {
-
-}
-
-h4{
+h4 {
   font-size: 1.1em;
 }
 
-/*mobile style*/
+/* mobile style */
 
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
 }
 
-.flex-div ul{
+.flex-div ul {
   display: none;
 }
 
@@ -105,7 +108,7 @@ h4{
 }
 
 .works-container {
-  margin: 5em 2em ;
+  margin: 5em 2em;
   row-gap: 10em;
   display: flex;
   flex-direction: column;
@@ -206,7 +209,7 @@ h4{
   display: flex;
   justify-content: space-between;
   height: 1.25rem;
-  margin: 0.6em 8em 0em 1.5em;
+  margin: 0.6em 8em 0 1.5em;
   cursor: pointer;
   list-style: none;
 }
@@ -238,7 +241,7 @@ h4{
   align-items: center;
 }
 
-.languages-des img{
+.languages-des img {
   height: 5%;
 }
 
@@ -314,7 +317,7 @@ h4{
 }
 
 .contact-section {
-  background: #6070FF;
+  background: #6070ff;
   background-image: url(src/img/contact\ form\ shapes-mobile@2x.png);
   background-repeat: no-repeat;
   background-size: 55%;
@@ -331,7 +334,7 @@ h4{
   border-top-right-radius: 4em;
 }
 
-.contact-title h4{
+.contact-title h4 {
   margin: 2.5em 0.6em 0 0.6em;
   font-size: 2.5em;
   color: #fff;
