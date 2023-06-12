@@ -22,15 +22,24 @@ li {
   line-height: 1.4em;
 }
 
+h1 {
+  font-size: 2.5em;
+  color: #172b4d;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
 /* mobile style */
 
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-}
-
-form ul {
-  list-style: none;
 }
 
 .flex-div ul {

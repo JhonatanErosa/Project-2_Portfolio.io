@@ -26,7 +26,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-**Portfolio** is a project to built a portfolio responsive design using HTML & CSS.
+**Portfolio** is a project to built a portfolio responsive design using HTML & CSS. This project has been deployed in GitHub pages.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -48,8 +48,9 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+Click on the following link:
 
-- Coming soon
+- https://jhonatanerosa.github.io/Project-2_Portfolio.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
