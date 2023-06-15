@@ -417,6 +417,10 @@ form {
   margin: 0.6em 3em 0 0.6em;
 }
 
+form ul {
+  list-style: none;
+}
+
 .input-box input {
   width: 100%;
   border: 1px solid #cfd8dc;
@@ -684,7 +688,7 @@ button {
   button {
     grid-column: 4/6;
     font-size: 1em;
-    margin: 5% 8% 5% 38%;
+    margin: 5% 8% 5% 45%;
   }
 }
 
