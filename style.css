@@ -13,6 +13,7 @@ li {
   padding: 0;
   text-decoration: none;
   font-size: 16px;
+  list-style: none;
 }
 
 p,
@@ -35,6 +36,13 @@ h4 {
   font-size: 1.1em;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+
 /* mobile style */
 
 .grid {
@@ -42,14 +50,11 @@ h4 {
   grid-template-columns: repeat(8, 1fr);
 }
 
-.flex-div ul {
-  display: none;
-  list-style: none;
-}
 
 .flex-div {
   display: flex;
   justify-content: space-between;
+  position: fixed;
   width: 100%;
   height: 3em;
   box-shadow: 0 0 0.62rem rgba(0, 0, 0, 0.2);
@@ -79,10 +84,73 @@ h4 {
   }
 }
 
-.nav-right img {
-  grid-column: 6/9;
-  margin: 1.1em 2.25em 1.1em 0;
+.hamburger {
+  margin:2vw;
   cursor: pointer;
+  border: none;
+  background: none;
+  transition: transform 200ms linear;
+}
+
+.hamburger:hover {
+  transform: rotate(90deg);
+}
+
+.links {
+  display: none;
+  list-style: none;
+}
+
+.links-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 32px;
+  width: calc(100% - 65px);
+  background: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(3px);
+}
+
+.links-menu li {
+  margin-bottom: 40px;
+}
+
+.links-menu li a{
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 44px;
+  color: white;
+}
+
+.links-menu li a:hover{
+  color: #1125ff;
+}
+
+.close-button {
+  display: flex;
+  justify-content: end;
+}
+
+.x-button {
+  width: 38px;
+  height: auto;
+  transition: transform 200ms linear;
+}
+
+.x-button:hover {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.display-center {
+  left: 0;
 }
 
 .main-container {
@@ -461,21 +529,21 @@ button {
   }
 
   .logo {
-    margin: 0 2% 0 70%;
+    margin: 0 0% 0 70%;
   }
 
-  .nav-right img {
+  .hamburger {
     display: none;
   }
 
-  .flex-div ul {
+  .links {
     display: flex;
     justify-content: space-between;
     margin: 1em 0 0.8em 60%;
   }
 
-  .flex-div li {
-    margin-right: 1em;
+  .links li {
+    margin-right: 2em;
     cursor: pointer;
     color: #344563;
     font-weight: 550;
@@ -716,7 +784,7 @@ button {
     width: 15%;
   }
 
-  .flex-div ul {
+  .links {
     margin-left: 75%;
   }
 }
