@@ -15,3 +15,6 @@ function closeWindow () {
 
 hamburger.addEventListener('click', openWindow);
 closeIcon.addEventListener('click', closeWindow);
+for (var i = 0; i < linksPopUp.length; i++){
+    linksPopUp[i].addEventListener('click', closeWindow);
+}
